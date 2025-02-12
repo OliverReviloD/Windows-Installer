@@ -3,7 +3,7 @@ Function Main {
     cls
 
     $MsiFile = "C:\.....\Dell-Dock-Firmware-Updater_v1.0.0\Source\DockWrapper_v1.0.0.msi"
-    $MsiFile = "C:\__B\Downloads\Intune-Apps\Dell-Dock-Firmware-Updater_v1.0.0\Source\DockWrapper_v1.0.0.msi"
+   
     $MsiFileReturn =  Get-MsiProperties -MsiFilePath $MsiFile -MyDebug $false
     $MsiFileReturn | FL | Out-String | Write-Host
     <#
